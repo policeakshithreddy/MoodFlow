@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MoodFlow UI Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="prototype-shell" aria-label="MoodFlow high fidelity mobile screens">
+      <header class="board-header">
+        <div>
+          <p class="board-label">MoodFlow mobile UI</p>
+          <h1>Premium emotional wellness screens</h1>
+        </div>
+        <div class="palette" aria-label="Logo color palette">
+          <span class="swatch teal"></span>
+          <span class="swatch sand"></span>
+          <span class="swatch coral"></span>
+        </div>
+      </header>
+
+      <section class="phone-row">
+        <article class="device" aria-label="Onboarding screen">
+          <div class="screen onboarding-screen">
+            <div class="status-bar">
+              <span>9:41</span>
+              <span class="status-icons">5G 100%</span>
+            </div>
+
+            <div class="onboarding-orb-wrap">
+              <div class="orb orb-xl" aria-hidden="true">
+                <span class="orb-core"></span>
+                <span class="orb-ring ring-one"></span>
+                <span class="orb-ring ring-two"></span>
+              </div>
+            </div>
+
+            <div class="brand-lockup">
+              <img src="assets/moodflow-logo.png" alt="MoodFlow logo" class="app-icon">
+              <span>MoodFlow</span>
+            </div>
+
+            <div class="onboarding-copy">
+              <h2>Understand the flow of your emotions</h2>
+              <p>A gentle space to reflect, understand and grow.</p>
+            </div>
+
+            <button class="primary-button">
+              <span>Begin gently</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+
+            <div class="pager-dots" aria-hidden="true">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <p class="screen-caption"><strong>1</strong> Onboarding</p>
+        </article>
+
+        <article class="device" aria-label="Home screen">
+          <div class="screen home-screen">
+            <div class="status-bar">
+              <span>9:41</span>
+              <span class="status-icons">5G 100%</span>
+            </div>
+
+            <header class="screen-top">
+              <div>
+                <h2>Good Morning</h2>
+                <p>Take a deep breath and be with yourself.</p>
+              </div>
+              <button class="icon-button" aria-label="Notifications">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M18 9a6 6 0 1 0-12 0c0 7-3 7-3 7h18s-3 0-3-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M10 20a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                </svg>
+              </button>
+            </header>
+
+            <section class="hero-mood" aria-label="Current emotional state">
+              <div class="orb orb-hero" aria-hidden="true">
+                <span class="orb-core"></span>
+                <span class="orb-ring ring-one"></span>
+                <span class="orb-ring ring-two"></span>
+              </div>
+              <div class="hero-mood-copy">
+                <h3>Calm</h3>
+                <p>You feel balanced and at ease.</p>
+              </div>
+            </section>
+
+            <section class="reflection-card">
+              <span class="quote-mark">"</span>
+              <p>Calm is not something you find. It is something you allow.</p>
+              <small>Unknown</small>
+            </section>
+
+            <div class="home-action-row">
+              <button class="primary-button action-wide">Log Mood</button>
+              <button class="orb-button" aria-label="Current mood color"></button>
+            </div>
+
+            <section class="recent">
+              <div class="section-heading">
+                <h3>Recent Journey</h3>
+                <a href="#journey">See all</a>
+              </div>
+              <div class="journey-mini">
+                <span class="mood-dot coral-dot"></span>
+                <div>
+                  <strong>Inspired</strong>
+                  <small>Today &middot; 8:45 PM</small>
+                </div>
+                <p>Worked on MoodFlow design</p>
+              </div>
+              <div class="journey-mini">
+                <span class="mood-dot teal-dot"></span>
+                <div>
+                  <strong>Calm</strong>
+                  <small>Yesterday &middot; 7:15 PM</small>
+                </div>
+                <p>Evening walk after dinner</p>
+              </div>
+            </section>
+
+            <nav class="bottom-nav" aria-label="MoodFlow navigation">
+              <a class="active" href="#home">
+                <span class="nav-icon home-icon"></span>
+                Home
+              </a>
+              <a href="#journey">
+                <span class="nav-icon journal-icon"></span>
+                Journey
+              </a>
+              <a href="#insights">
+                <span class="nav-icon insights-icon"></span>
+                Insights
+              </a>
+              <a href="#you">
+                <span class="nav-icon you-icon"></span>
+                You
+              </a>
+            </nav>
+          </div>
+          <p class="screen-caption"><strong>2</strong> Home</p>
+        </article>
+
+        <article class="device" aria-label="Mood logging screen">
+          <div class="screen mood-logging-screen" id="moodLogging">
+            <div class="status-bar light">
+              <span>9:41</span>
+              <span class="status-icons">5G 100%</span>
+            </div>
+
+            <button class="close-button" aria-label="Close mood logging">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </button>
+
+            <div class="canvas-copy">
+              <h2>How are you feeling?</h2>
+              <p>Drag to explore</p>
+            </div>
+
+            <div class="orb orb-canvas" id="liveOrb" aria-hidden="true">
+              <span class="orb-core"></span>
+              <span class="orb-ring ring-one"></span>
+              <span class="orb-ring ring-two"></span>
+            </div>
+
+            <div class="mood-spectrum" aria-label="Mood spectrum selector">
+              <div class="mood-labels" aria-hidden="true">
+                <span>Reflective</span>
+                <span>Calm</span>
+                <span>Focused</span>
+                <span>Inspired</span>
+                <span>Joyful</span>
+              </div>
+              <input id="moodRange" type="range" min="0" max="4" value="3" step="1" aria-label="Drag through the emotional spectrum">
+            </div>
+
+            <section class="selected-mood" aria-live="polite">
+              <h2 id="moodLabel">Inspired</h2>
+              <p id="moodDescription">Creative &middot; Energized &middot; Optimistic</p>
+            </section>
+
+            <p class="release-note"><span></span> Release to select</p>
+          </div>
+          <p class="screen-caption"><strong>3</strong> Mood Logging</p>
+        </article>
+
+        <article class="device" aria-label="Mood details screen">
+          <div class="screen details-screen">
+            <div class="status-bar">
+              <span>9:41</span>
+              <span class="status-icons">5G 100%</span>
+            </div>
+
+            <header class="details-header">
+              <button class="icon-button plain" aria-label="Back">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M15 18 9 12l6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="small-orb" aria-hidden="true"></div>
+              <button class="icon-button plain" aria-label="Favorite">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 8.6c0 5.2-8.8 10-8.8 10s-8.8-4.8-8.8-10A4.8 4.8 0 0 1 12 5a4.8 4.8 0 0 1 8.8 3.6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </header>
+
+            <div class="progress-line" aria-hidden="true"><span></span></div>
+
+            <section class="question-block">
+              <h2>What influenced this feeling?</h2>
+              <p>Choose all that apply</p>
+              <div class="chip-grid">
+                <button class="chip" aria-pressed="false">
+                  <span class="chip-icon work"></span>
+                  Work
+                </button>
+                <button class="chip selected" aria-pressed="true">
+                  <span class="chip-icon heart"></span>
+                  Relationships
+                </button>
+                <button class="chip selected" aria-pressed="true">
+                  <span class="chip-icon leaf"></span>
+                  Health
+                </button>
+                <button class="chip" aria-pressed="false">
+                  <span class="chip-icon moon"></span>
+                  Sleep
+                </button>
+                <button class="chip" aria-pressed="false">
+                  <span class="chip-icon spark"></span>
+                  Growth
+                </button>
+              </div>
+            </section>
+
+            <section class="energy-block">
+              <h3>Energy level</h3>
+              <div class="energy-options">
+                <button>Low</button>
+                <button class="selected">Medium</button>
+                <button>High</button>
+              </div>
+            </section>
+
+            <section class="reflection-input">
+              <label for="reflection">Add a reflection <span>(optional)</span></label>
+              <textarea id="reflection" placeholder="How was your day?"></textarea>
+            </section>
+
+            <button class="primary-button save-button">
+              <span>Save Moment</span>
+              <span class="check-circle">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 12 3.2 3.2L17 8.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <p class="screen-caption"><strong>4</strong> Mood Details</p>
+        </article>
+
+        <article class="device" id="journey" aria-label="Journey screen">
+          <div class="screen journey-screen">
+            <div class="status-bar">
+              <span>9:41</span>
+              <span class="status-icons">5G 100%</span>
+            </div>
+
+            <header class="journey-header">
+              <h2>Journey</h2>
+              <div class="header-actions">
+                <button class="icon-button plain" aria-label="Search">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m21 21-4.3-4.3M19 11a8 8 0 1 1-16 0 8 8 0 0 1 16 0z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                  </svg>
+                </button>
+                <button class="icon-button plain" aria-label="Filters">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 7h10M18 7h2M4 17h2M10 17h10M8 5v4M16 15v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </header>
+
+            <div class="filter-tabs" role="tablist" aria-label="Journey filters">
+              <button class="active" type="button">All</button>
+              <button type="button">Moments</button>
+              <button type="button">Reflections</button>
+              <button type="button">Tags</button>
+            </div>
+
+            <section class="memory-list">
+              <h3>Today</h3>
+              <article class="memory-card">
+                <span class="memory-glow coral-dot"></span>
+                <div class="memory-content">
+                  <div class="memory-meta">
+                    <div>
+                      <strong>Inspired</strong>
+                      <small>8:45 PM</small>
+                    </div>
+                    <button aria-label="More options">...</button>
+                  </div>
+                  <p>Worked on MoodFlow design</p>
+                  <span class="tag coral-tag">Creative</span>
+                </div>
+              </article>
+
+              <h3>Yesterday</h3>
+              <article class="memory-card">
+                <span class="memory-glow teal-dot"></span>
+                <div class="memory-content">
+                  <div class="memory-meta">
+                    <div>
+                      <strong>Calm</strong>
+                      <small>7:15 PM</small>
+                    </div>
+                    <button aria-label="More options">...</button>
+                  </div>
+                  <p>Evening walk after dinner</p>
+                  <span class="tag teal-tag">Rest</span>
+                </div>
+              </article>
+
+              <h3>Jun 9</h3>
+              <article class="memory-card compact">
+                <span class="memory-glow sand-dot"></span>
+                <div class="memory-content">
+                  <div class="memory-meta">
+                    <div>
+                      <strong>Focused</strong>
+                      <small>11:30 AM</small>
+                    </div>
+                    <button aria-label="More options">...</button>
+                  </div>
+                  <p>Deep work on product strategy</p>
+                  <span class="tag sand-tag">Productivity</span>
+                </div>
+              </article>
+            </section>
+
+            <nav class="bottom-nav" aria-label="MoodFlow navigation">
+              <a href="#home"><span class="nav-icon home-icon"></span>Home</a>
+              <a class="active" href="#journey"><span class="nav-icon journal-icon"></span>Journey</a>
+              <a href="#insights"><span class="nav-icon insights-icon"></span>Insights</a>
+              <a href="#you"><span class="nav-icon you-icon"></span>You</a>
+            </nav>
+          </div>
+          <p class="screen-caption"><strong>5</strong> Journey</p>
+        </article>
+
+        <article class="device" id="insights" aria-label="Insights screen">
+          <div class="screen insights-screen">
+            <div class="status-bar">
+              <span>9:41</span>
+              <span class="status-icons">5G 100%</span>
+            </div>
+
+            <header class="insights-header">
+              <div>
+                <h2>Insights</h2>
+                <p>Here is what your flow is showing you.</p>
+              </div>
+              <button class="icon-button plain" aria-label="Insight highlights">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3l1.7 5.1L19 10l-5.3 1.9L12 17l-1.7-5.1L5 10l5.3-1.9L12 3zM19 15l.9 2.5L22 18l-2.1.5L19 21l-.9-2.5L16 18l2.1-.5L19 15z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </header>
+
+            <section class="observation-list">
+              <article>
+                <span class="insight-dot teal-dot"></span>
+                <p>You felt calmer this week.</p>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </article>
+              <article>
+                <span class="insight-dot sand-dot"></span>
+                <p>Your happiest moments happened in the evening.</p>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </article>
+              <article>
+                <span class="insight-dot coral-dot"></span>
+                <p>Stress levels decreased this month.</p>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </article>
+            </section>
+
+            <section class="flow-chart">
+              <div class="section-heading">
+                <h3>Your emotional flow</h3>
+                <button type="button">This month</button>
+              </div>
+              <svg class="wave-chart" viewBox="0 0 330 240" role="img" aria-label="Soft curved emotional flow visualization">
+                <defs>
+                  <linearGradient id="flowA" x1="0" x2="1" y1="0" y2="0">
+                    <stop offset="0%" stop-color="#50c6c4" stop-opacity=".72"></stop>
+                    <stop offset="52%" stop-color="#f4c979" stop-opacity=".54"></stop>
+                    <stop offset="100%" stop-color="#f38976" stop-opacity=".72"></stop>
+                  </linearGradient>
+                  <linearGradient id="flowB" x1="0" x2="1" y1="0" y2="0">
+                    <stop offset="0%" stop-color="#50c6c4" stop-opacity=".34"></stop>
+                    <stop offset="100%" stop-color="#f38976" stop-opacity=".38"></stop>
+                  </linearGradient>
+                </defs>
+                <path d="M0 138C38 92 72 82 108 122c43 49 74 55 117 7 41-46 70-46 105-5v116H0z" fill="url(#flowB)"></path>
+                <path d="M0 117C39 75 70 69 104 105c38 42 69 50 109 5 43-49 75-56 117-18v148H0z" fill="url(#flowA)"></path>
+                <path d="M0 117C39 75 70 69 104 105c38 42 69 50 109 5 43-49 75-56 117-18" fill="none" stroke="#ffffff" stroke-opacity=".82" stroke-width="2"></path>
+                <circle cx="286" cy="91" r="4" fill="#ffffff"></circle>
+                <circle cx="46" cy="84" r="2.5" fill="#ffffff" opacity=".78"></circle>
+                <circle cx="211" cy="111" r="2.5" fill="#ffffff" opacity=".74"></circle>
+              </svg>
+              <div class="chart-dates" aria-hidden="true">
+                <span>May 18</span>
+                <span>May 25</span>
+                <span>Jun 1</span>
+                <span>Jun 8</span>
+              </div>
+            </section>
+
+            <nav class="bottom-nav" aria-label="MoodFlow navigation">
+              <a href="#home"><span class="nav-icon home-icon"></span>Home</a>
+              <a href="#journey"><span class="nav-icon journal-icon"></span>Journey</a>
+              <a class="active" href="#insights"><span class="nav-icon insights-icon"></span>Insights</a>
+              <a href="#you"><span class="nav-icon you-icon"></span>You</a>
+            </nav>
+          </div>
+          <p class="screen-caption"><strong>6</strong> Insights</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
